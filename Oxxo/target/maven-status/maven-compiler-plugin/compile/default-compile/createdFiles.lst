@@ -1,2 +1,12 @@
+Controlador\dao\UsuarioDAO.class
+Controlador\entity\Usuario.class
+Controlador\entity\Usuario_.class
+Controlador\jpa\test\usuarioTest.class
+Controlador\jpa\exceptions\IllegalOrphanException.class
+Controlador\jpa\exceptions\PreexistingEntityException.class
+Controlador\exceptions\NonexistentEntityException.class
+Controlador\jpa\UsuarioJpaController.class
+Controlador\crud.class
+Controlador\jpa\exceptions\NonexistentEntityException.class
 com\mycompany\oxxo\resources\JakartaEE8Resource.class
 com\mycompany\oxxo\JakartaRestConfiguration.class

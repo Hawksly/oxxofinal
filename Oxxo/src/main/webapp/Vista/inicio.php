@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oxxo</title>
-    <link rel="stylesheet" href="/oxxo/css/ingreso.css">
-    <link rel="stylesheet" href="/oxxo/css/style.css">
-    <link rel="stylesheet" href="/oxxo/css/main.css">
+    <link rel="stylesheet" href="/Oxxo/css/ingreso.css">
+    <link rel="stylesheet" href="/Oxxo/css/style.css">
+    <link rel="stylesheet" href="/Oxxo/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="/oxxo/js/jq/jquery-3.6.1.min.js"></script>
-    <link rel="icon" href="/oxxo/res/logo/oxxo-asi-de-facil.png">
+    <link rel="icon" href="/Oxxo/res/logo/oxxo-asi-de-facil.png">
 </head>
 <body>
     <header class="header sticky-top">
         <div class="logo">
-            <img src="/proyectooxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
+            <img src="/Oxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="/oxxo/Vista/inicio.php">Inicio</a></li>
-                <li><a href="/oxxo/Vista/about.php">Quiénes Somos</a></li>
-                <li><a href="/oxxo/Vista/promociones.php">Promociones</a></li>
-                <li><a href="/oxxo/contacto.jsp">Contáctanos</a></li>
+                <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
+                <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
+                <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
+                <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
             </ul>
         </nav>
         <a href="login.html" class="boton"><button>Login</button></a>
@@ -32,10 +31,10 @@
         <div class="overlay" id="mobile-menu">
             <a onclick="closeNav()" href="" class="close">&times;</a>
             <div class="overlay-content">
-                <a href="/oxxo/Vista/inicio.php">Inicio</a>
-                <a href="/oxxo/Vista/about.php">Quiénes Somos</a>
-                <a href="/ooxxo/Vista/promociones.php">Promociones</a>
-                <a href="/oxxo/contacto.jsp">Contáctanos</a>
+                <a href="/Oxxo/Vista/inicio.php">Inicio</a>
+                <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
+                <a href="/Oxxo/Vista/promociones.php">Promociones</a>
+                <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
             </div>
         </div>
     </header>
@@ -50,19 +49,19 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/oxxo/res/carousel/spin.png" class="d-block w-100" alt="spin">
+                <img src="/Oxxo/res/carousel/spin.png" class="d-block w-100" alt="spin">
             </div>
             <div class="carousel-item">
-                <img src="/oxxo/res/carousel/extra.png" class="d-block w-100" alt="extra">
+                <img src="/Oxxo/res/carousel/extra.png" class="d-block w-100" alt="extra">
             </div>
             <div class="carousel-item">
-                <img src="/oxxo/res/carousel/silver.png" class="d-block w-100" alt="silver">
+                <img src="/Oxxo/res/carousel/silver.png" class="d-block w-100" alt="silver">
             </div>
             <div class="carousel-item">
-                <img src="/oxxo/res/carousel/dulce.png" class="d-block w-100" alt="dulce">
+                <img src="/Oxxo/res/carousel/dulce.png" class="d-block w-100" alt="dulce">
             </div>
             <div class="carousel-item">
-                <img src="/oxxo/res/carousel/game.png" class="d-block w-100" alt="game">
+                <img src="/Oxxo/res/carousel/game.png" class="d-block w-100" alt="game">
             </div>
         </div>
         <button class="carousel-control-prev btncarousel" type="button" data-bs-target="#carouselproducto"
@@ -92,31 +91,31 @@
 				<!---Abrir 1era columna-->
                 <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-2 p-3">
 					<div class="" >
-						<a href="promociones.html"><img src="/oxxo/res/banner/catalogo.png" class="banner" style="width:100%"></a>
+						<a href="promociones.html"><img src="/Oxxo/res/banner/catalogo.png" class="banner" style="width:100%"></a>
 					</div><br>
 					<div class="">
-						<a href="contacto.html"><img src="/oxxo/res/banner/ubicaciones.png" class="banner" style="width:100%"></a>
+						<a href="contacto.html"><img src="/Oxxo/res/banner/ubicaciones.png" class="banner" style="width:100%"></a>
 					</div><br>
 					<div class="">
-						<a href="promociones.html"><img src="/oxxo/res/banner/promociones.png" class="banner" style="width:100%"></a>
+						<a href="promociones.html"><img src="/Oxxo/res/banner/promociones.png" class="banner" style="width:100%"></a>
 					</div><br>
 					<div class="">
-						<a href="about.html"><img src="/oxxo/res/banner/equipo.png" class="banner" style="width:100%"></a>
+						<a href="about.html"><img src="/Oxxo/res/banner/equipo.png" class="banner" style="width:100%"></a>
 					</div>
                     <br>PRODUCTOS OXXO <br>
                     <div id="carouselvideos" class="carousel slide mt-0" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/oxxo/res/producto/agua.png">
+                                <img src="/Oxxo/res/producto/agua.png">
                             </div>
                             <div class="carousel-item">
-                                <img src="/oxxo/res/producto/atun.png">
+                                <img src="/Oxxo/res/producto/atun.png">
                             </div>
                             <div class="carousel-item">
-                                <img src="/oxxo/res/producto/batimix.png">
+                                <img src="/Oxxo/res/producto/batimix.png">
                             </div>
                             <div class="carousel-item">
-                                <img src="/oxxo/res/producto/energizante.png">
+                                <img src="/Oxxo/res/producto/energizante.png">
                             </div>
                         </div>
                     </div>
@@ -142,7 +141,7 @@
                             </div>
 							<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3 ">
                                 <div class="button wow fadeInUp" data-wow-delay=".8s">
-                                    <a href="/oxxo/Vista/promociones.html" class="btn btn-alt">Comprar ahora!</a>
+                                    <a href="/Oxxo/Vista/promociones.html" class="btn btn-alt">Comprar ahora!</a>
                                 </div>
                             </div>
 						</div>
@@ -150,21 +149,21 @@
 							<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3  ">
                                 <div class="single-feature">
                                     <i class="lni lni-pie-chart">
-                                    <img src="/oxxo/res/icono/correo.JPG"></i>
+                                    <img src="/Oxxo/res/icon/correo.JPG"></i>
                                     <h2>Escríbenos: <span>ventas@oxxo.com​​​​​​​</span></h2>
                                 </div>
                             </div>
 							<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3  ">
                                 <div class="single-feature">
                                     <i class="lni lni-handshake">
-                                        <img src="/oxxo/res/icono/contactanos.JPG"></i>
+                                        <img src="/Oxxo/res/icon/contactanos.JPG"></i>
                                     <h2>Contáctenos: <span>01 601 3636</span></h2>
                                 </div>
                             </div>
                             <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3  ">
                                 <div class="single-feature">
                                     <i class="lni lni-investment">
-                                        <img src="/oxxo/res/icono/ubicacion.JPG"></i>
+                                        <img src="/Oxxo/res/icon/ubicacion.JPG"></i>
                                     <h2>Visítenos en:<span>Av. Sol 116 - SJL</span></h2>
                                 </div>
                             </div>
@@ -214,10 +213,10 @@
                     <div class="footer-col">
                         <h4>Mundo</h4>
                         <ul>
-                            <li><a href="/oxxo/Vista/inicio.php">Inicio</a></li>
-                            <li><a href="/oxxo/Vista/about.php">Quiénes Somos</a></li>
-                            <li><a href="/oxxo/Vista/promociones.php">Promociones</a></li>
-                            <li><a href="/oxxo/Vista/contacto.php">Contáctanos</a></li>
+                            <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
+                            <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
+                            <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
+                            <li><a href="/Oxxo/Vista/contacto.php">Contáctanos</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -235,7 +234,7 @@
                             <a href="https://www.facebook.com/OXXOperu/"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/OXXOperu/?hl=es-la"><i class="fab fa-instagram"></i></a>
                             <a href="https://twitter.com/Tiendas_OXXO"><i class="fab fa-twitter"></i></a>
-                            <img src="/oxxo/res/logo/oxxo-asi-de-facil.png" alt="oxxo-asi-de-facil" />
+                            <img src="/Oxxo/res/logo/oxxo-asi-de-facil.png" alt="oxxo-asi-de-facil" />
                         </div>
                     </div>
                 </div>
@@ -244,6 +243,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>
-            <script src="/oxxo/recursos/js/main.js"></script>
+            <script src="/Oxxo/recursos/js/main.js"></script>
 </body>
 </html>

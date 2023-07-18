@@ -8,12 +8,15 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
@@ -21,6 +24,7 @@ import javax.validation.constraints.Size;
  */
 @Entity
 @Table(name = "usuario")
+@XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Usuario.findAll", query = "SELECT u FROM Usuario u"),
     @NamedQuery(name = "Usuario.findByIdUsuario", query = "SELECT u FROM Usuario u WHERE u.idUsuario = :idUsuario"),
@@ -31,13 +35,14 @@ import javax.validation.constraints.Size;
     @NamedQuery(name = "Usuario.findByCorreo", query = "SELECT u FROM Usuario u WHERE u.correo = :correo"),
     @NamedQuery(name = "Usuario.findByDireccion", query = "SELECT u FROM Usuario u WHERE u.direccion = :direccion"),
     @NamedQuery(name = "Usuario.findByUsuario", query = "SELECT u FROM Usuario u WHERE u.usuario = :usuario"),
-    @NamedQuery(name = "Usuario.findByContrasena", query = "SELECT u FROM Usuario u WHERE u.contrasena = :contrasena")})
+    @NamedQuery(name = "Usuario.findByContrasena", query = "SELECT u FROM Usuario u WHERE u.contrasena = :contrasena"),
+    @NamedQuery(name = "Usuario.findByRol", query = "SELECT u FROM Usuario u WHERE u.rol = :rol")})
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @NotNull
     @Column(name = "id_usuario")
     private Integer idUsuario;
     @Basic(optional = false)
@@ -79,6 +84,11 @@ public class Usuario implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "contrasena")
     private String contrasena;
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Column(name = "rol")
+    private String rol;
 
     public Usuario() {
     }
@@ -87,7 +97,8 @@ public class Usuario implements Serializable {
         this.idUsuario = idUsuario;
     }
 
-    public Usuario(Integer idUsuario, String nombre, String apellidoPaterno, String apellidoMaterno, int telefono, String correo, String direccion, String usuario, String contrasena) {
+    public Usuario(Integer idUsuario, String nombre, String apellidoPaterno, String apellidoMaterno, 
+            int telefono, String correo, String direccion, String usuario, String contrasena, String rol) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
@@ -97,6 +108,7 @@ public class Usuario implements Serializable {
         this.direccion = direccion;
         this.usuario = usuario;
         this.contrasena = contrasena;
+        this.rol = rol;
     }
 
     public Integer getIdUsuario() {
@@ -171,6 +183,14 @@ public class Usuario implements Serializable {
         this.contrasena = contrasena;
     }
 
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -193,7 +213,7 @@ public class Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "Controlador.Usuario[ idUsuario=" + idUsuario + " ]";
+        return "Controlador.entity.Usuario[ idUsuario=" + idUsuario + " ]";
     }
     
 }

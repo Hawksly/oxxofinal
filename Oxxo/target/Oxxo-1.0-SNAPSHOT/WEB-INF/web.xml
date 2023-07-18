@@ -7,9 +7,17 @@
         <servlet-name>SvLogin</servlet-name>
         <servlet-class>Controlador.servlet.SvLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SvProducto</servlet-name>
+        <servlet-class>Controlador.servlet.SvProducto</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvLogin</servlet-name>
         <url-pattern>/SvLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvProducto</servlet-name>
+        <url-pattern>/SvProducto</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

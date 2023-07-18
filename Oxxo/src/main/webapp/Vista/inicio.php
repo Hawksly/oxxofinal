@@ -24,6 +24,7 @@
                 <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
                 <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
                 <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
+                <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
             </ul>
         </nav>
         <a href="login.html" class="boton"><button>Login</button></a>

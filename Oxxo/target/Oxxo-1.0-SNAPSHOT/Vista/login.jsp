@@ -1,9 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 16 jul 2023, 19:42:03
-    Author     : MIGUEL
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -29,7 +23,7 @@
                 <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
                 <li><a href="/Oxxo/Vista/about.php">Sobre nosotros</a></li>
                 <li><a href="/Oxxo/Vista/promociones.php">Productos</a></li>
-                <li><a href="/Oxxo/Vista/contacto.php">Contacto</a></li>
+                <li><a href="/Oxxo/Vista/contacto.jsp">Contacto</a></li>
             </ul>
         </nav>
         <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
@@ -40,14 +34,14 @@
                 <a href="/Oxxo/Vista/inicio.php">Inicio</a>
                 <a href="/Oxxo/Vista/about.php">Sobre nosotros</a>
                 <a href="/Oxxo/Vista/productos.php">Productos</a>
-                <a href="/Oxxo/Vista/contacto.php">Contacto</a>
+                <a href="/Oxxo/Vista/contacto.jsp">Contacto</a>
             </div>
         </div>
     </header>
         <!-- Fin de Cabecera -->
         <main class="p-4 d-flex flex-column align-items-center">
 		<div style="width: 40vw;">
-                    <img style="width: 40vw; height:20vw;" src="/oxxo/res/aula.jpg" alt="aula" />
+                    <img style="width: 40vw; height:20vw;" src="/Oxxo/res/banner/oxxo.png" alt="aula" />
 		</div>
 		<div class="card" style="width: 40vw;">
 			<div class="card-body">

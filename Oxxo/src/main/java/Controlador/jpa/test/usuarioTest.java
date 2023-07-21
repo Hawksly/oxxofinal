@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controlador.jpa.test;
 
 import Controlador.dao.UsuarioDAO;
 
-/**
- *
- * @author MIGUEL
- */
 public class usuarioTest {
     
     public static void main (String[] args){

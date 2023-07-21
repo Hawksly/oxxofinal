@@ -128,7 +128,7 @@
                         </div>
                     </div>
                         <div class="row">
-							<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3">
                                 <div class="">
                                    <p class="wow fadeInUp" data-wow-delay=".6s">
                                         Pide tus productos a traves de esta tienda OXXO.
@@ -142,7 +142,7 @@
                             </div>
 							<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3 ">
                                 <div class="button wow fadeInUp" data-wow-delay=".8s">
-                                    <a href="/Oxxo/Vista/promociones.html" class="btn btn-alt">Comprar ahora!</a>
+                                    <a href="/Oxxo/Vista/promociones.php" class="btn btn-alt">Comprar ahora!</a>
                                 </div>
                             </div>
 						</div>

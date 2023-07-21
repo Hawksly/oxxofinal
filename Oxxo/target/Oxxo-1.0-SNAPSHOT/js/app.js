@@ -5,7 +5,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Cerveza muy equilibrada donde predominan moderadas notas a frutas blancas y de cereal",
     precio: 28,
-    img: "res/producto/stella.png",
+    img: "/Oxxo/res/producto/stella.png"
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Cerveza de maíz clara debido a que utiliza este ingrediente como adjunto a la malta de cebada",
     precio: 18,
-    img: "res/producto/pum.png",
+    img: "/Oxxo/res/producto/pum.png"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Un lácteo parcialmente descremado sabor vainilla con hojuelas de arroz crujiente bañado en chocolate",
     precio: 4,
-    img: "res/producto/batimix.png",
+    img: "/Oxxo/res/producto/batimix.png"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Yogurt Gloria es una cremosa y deliciosa bebida láctea con trozos de fruta, tiene nutrientes con zinc y vitaminas",
     precio: 6,
-    img: "res/producto/Lit.png",
+    img: "/Oxxo/res/producto/Lit.png"
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Filete de Atún FLORIDA en Aceite Vegetal Lata 140g, Calorias:196 cal, Grasas: 7g",
     precio: 5,
-    img: "res/producto/atun.png",
+    img: "/Oxxo/res/producto/atun.png"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Un snack rico para cualquier momento del dia, galletas elaboradas con quinua y semillas de ajonjolí",
     precio: 9,
-    img: "res/producto/Quinua.png",
+    img: "/Oxxo/res/producto/Quinua.png"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Los frijoles de ojos negros tienen beneficios para personas que sufren diabetes, colesterol y la anemia",
     precio: 8,
-    img: "res/producto/Frijol.png",
+    img: "/Oxxo/res/producto/Frijol.png"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "El agua mineral San Mateo tiene origen de manantial y contiene minerales buenos para tu cuerpo",
     precio: 3,
-    img: "res/producto/agua.png",
+    img: "/Oxxo/res/producto/agua.png"
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Los dulces Vizzio son almendras finamente seleccionadas bañadas en abundante chocolate de leche",
     precio: 20,
-    img: "res/producto/vizio.png",
+    img: "/Oxxo/res/producto/vizio.png"
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Una golosina de la Arcor, Bombón con sabor a chocolate blanco con relleno sabor a frutilla fresa",
     precio: 17,
-    img: "res/producto/corazon.png",
+    img: "/Oxxo/res/producto/corazon.png"
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Hojuelas de Papas Fritas LAY'S Ondas Picante Bolsa 150g, Grasas: 10g, sodio: 210mg",
     precio: 2,
-    img: "res/producto/picante.png",
+    img: "/Oxxo/res/producto/picante.png"
   },
   {
     id: 12,
@@ -93,8 +93,8 @@ const stockProductos = [
     cantidad: 1,
     desc: "La bebida energética más salvaje, Refresco energético carbonatado.",
     precio: 10,
-    img: "res/producto/energizante.png",
-  },
+    img: "/Oxxo/res/producto/energizante.png"
+  }
 ];
 let carrito = [];
 
@@ -105,7 +105,7 @@ const precioTotal = document.querySelector("#precioTotal");
 const activarFuncion = document.querySelector("#activarFuncion");
 const procesarCompra = document.querySelector("#procesarCompra");
 const totalProceso = document.querySelector("#totalProceso");
-const formulario = document.querySelector('#procesar-pago')
+const formulario = document.querySelector('#procesar-pago');
 
 if (activarFuncion) {
   activarFuncion.addEventListener("click", procesarPedido);
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#activarFuncion").click(procesarPedido);
 });
 if (formulario) {
-  formulario.addEventListener('submit', enviarCompra)
+  formulario.addEventListener('submit', enviarCompra);
 }
 
 
@@ -136,10 +136,10 @@ if (procesarCompra) {
         title: "¡Tu carrito está vacio!",
         text: "Compra algo para continuar con la compra",
         icon: "error",
-        confirmButtonText: "Aceptar",
+        confirmButtonText: "Aceptar"
       });
     } else {
-      location.href = "compra.html";
+      location.href = "compra.php";
     }
   });
 }
@@ -168,14 +168,14 @@ const agregarProducto = (id) => {
   if (existe) {
     const prod = carrito.map(prod => {
       if (prod.id === id) {
-        prod.cantidad++
+        prod.cantidad++;
       }
-    })
+    });
   } else {
-    const item = stockProductos.find((prod) => prod.id === id)
-    carrito.push(item)
+    const item = stockProductos.find((prod) => prod.id === id);
+    carrito.push(item);
   }
-  mostrarCarrito()
+  mostrarCarrito();
 
 };
 
@@ -258,17 +258,17 @@ function procesarPedido() {
 }
 
 function enviarCompra(e) {
-  e.preventDefault()
-  const persona = document.querySelector('#persona').value
-  const email = document.querySelector('#correo').value
+  e.preventDefault();
+  const persona = document.querySelector('#persona').value;
+  const email = document.querySelector('#correo').value;
 
-  if (email === '' || persona == '') {
+  if (email === '' || persona === '') {
     Swal.fire({
       title: "¡Debes completar tu email y nombre!",
       text: "Rellena el formulario",
       icon: "error",
-      confirmButtonText: "Aceptar",
-    })
+      confirmButtonText: "Aceptar"
+    });
   } else {
 
     const btn = document.getElementById('button');
@@ -292,25 +292,25 @@ function enviarCompra(e) {
           });
   };
 
-    const spinner = document.querySelector('#spinner')
-    spinner.classList.add('d-flex')
-    spinner.classList.remove('d-none')
+    const spinner = document.querySelector('#spinner');
+    spinner.classList.add('d-flex');
+    spinner.classList.remove('d-none');
 
     setTimeout(() => {
-      spinner.classList.remove('d-flex')
-      spinner.classList.add('d-none')
-      formulario.reset()
-     }, 3000)
+      spinner.classList.remove('d-flex');
+      spinner.classList.add('d-none');
+      formulario.reset();
+     }, 3000);
 
-      const alertExito = document.createElement('p')
-      alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success')
-      alertExito.textContent = 'Compra realizada correctamente'
-      formulario.appendChild(alertExito)
+      const alertExito = document.createElement('p');
+      alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success');
+      alertExito.textContent = 'Compra realizada correctamente';
+      formulario.appendChild(alertExito);
 
       setTimeout(() => {
-        alertExito.remove()
-      }, 3000)
+        alertExito.remove();
+      }, 3000);
 
 
-    localStorage.clear()
+    localStorage.clear();
   }

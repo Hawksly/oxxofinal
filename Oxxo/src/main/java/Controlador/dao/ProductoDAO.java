@@ -1,6 +1,6 @@
 package Controlador.dao;
 
-import Controlador.CRUD;
+import Controlador.ConsultaCRUD;
 import Controlador.entity.Productos;
 import Controlador.jpa.ProductosJpaController;
 
@@ -11,7 +11,7 @@ public class ProductoDAO {
     private String mensaje = "";
     
     public String insertarProducto(String nombre, String descripcion, Double precio, String categoria, String ruta){
-        CRUD cn = new CRUD();
+        ConsultaCRUD cn = new ConsultaCRUD();
         try {
             producto.setIdProducto(Integer.MIN_VALUE);
             producto.setNombrePoducto(nombre);

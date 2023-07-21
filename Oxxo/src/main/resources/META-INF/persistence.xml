@@ -4,6 +4,7 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>Controlador.entity.Usuario</class>
     <class>Controlador.entity.Productos</class>
+    <class>Controlador.entity.Consulta</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/oxxo"/>

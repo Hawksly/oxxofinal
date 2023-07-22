@@ -1,3 +1,4 @@
+<%@page import="Modelo.Rol"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,7 +25,26 @@
                     <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
                     <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
                     <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
-                    <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                    <%Rol r = new Rol();
+                    switch (r.getRol()) { 
+                    case "Administrador":%>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                        <li><a class="dropdown-item" href="/Oxxo/Vista/registroempleado.jsp">Registro de Empleado</a></li>
+                    </ul>
+                    <%break;
+                    case "Empleado":%>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                        <li><a class="nav-link disabled" href="#">Registro de Empleado</a></li>
+                    </ul>
+                    <%break;
+                    case "Cliente":%>
+                    
+                    <%break;
+                    default:%>
+                    
+                    <%break;}%>
                 </ul>
             </nav>
             <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
@@ -36,7 +56,8 @@
                     <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
                     <a href="/Oxxo/Vista/promociones.php">Promociones</a>
                     <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
-                    <a href="/Oxxo/Vista/inventario.jsp"></a>
+                    <a href="/Oxxo/Vista/inventario.jsp">Inventario</a>
+                    <a href="/Oxxo/Vista/registroempleado.jsp">Registro</a>
                 </div>
             </div>
         </header>
@@ -74,8 +95,6 @@
                     </div>
                 </div>
             </form>
-            
-            
         </div>
     <!-- Inferior -->
         <footer class="footer">

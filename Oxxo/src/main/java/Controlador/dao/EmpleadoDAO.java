@@ -1,8 +1,8 @@
 package Controlador.dao;
 
-import Controlador.jpa.EmpleadoJpaController;
 import Modelo.entidades.Empleado;
 import Modelo.DataBase.Conexion;
+import Modelo.Rol;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -26,6 +26,8 @@ public class EmpleadoDAO {
             em.setUsuario(rs.getString("usuario"));
             em.setContrasena(rs.getString("contrasena"));
             em.setRol(rs.getString("rol"));
+            Rol r = new Rol();
+            r.setRol(rs.getString("rol"));
             String usuarioDB = em.getUsuario();
             if (usuarioDB != null && usuarioDB.equalsIgnoreCase(user)) {
                 System.out.println("Usuario autenticado: " + usuarioDB);

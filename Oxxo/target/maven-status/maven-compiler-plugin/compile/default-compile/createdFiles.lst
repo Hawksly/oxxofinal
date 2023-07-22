@@ -1,6 +1,8 @@
 Controlador\CRUD\exceptions\NonexistentEntityException.class
 Controlador\servlet\SvConsulta.class
+Controlador\servlet\SvContacto.class
 Modelo\encriptacion\Encriptacion.class
+Modelo\Rol.class
 Controlador\CRUD\exceptions\IllegalOrphanException.class
 Controlador\CRUD\CRUD.class
 Controlador\dao\ConsultaDAO.class
@@ -12,7 +14,9 @@ Modelo\entidades\Consulta.class
 Controlador\exceptions\NonexistentEntityException.class
 Controlador\servlet\SvValidar.class
 Controlador\CRUD\exceptions\PreexistingEntityException.class
+Controlador\jpa\Controlador.class
 com\mycompany\oxxo\resources\JakartaEE8Resource.class
+Controlador\servlet\SvRegistro.class
 Modelo\entidades\Empleado_.class
 Controlador\jpa\EmpleadoJpaController.class
 Controlador\dao\EmpleadoDAO.class

@@ -23,6 +23,9 @@ public class ConsultaJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public ConsultaJpaController() {
+    }
+    
     public void create(Consulta consulta) {
         EntityManager em = null;
         try {

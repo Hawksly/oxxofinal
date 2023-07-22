@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo.entidades;
 
 import java.io.Serializable;
@@ -17,10 +13,6 @@ import javax.persistence.Table;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author MIGUEL
- */
 @Entity
 @Table(name = "consulta")
 @XmlRootElement
@@ -66,6 +58,16 @@ public class Consulta implements Serializable {
     public Consulta() {
     }
 
+    public Consulta(String motivo, String clienteNombre, String clienteApellido, String clienteCorreo, int clienteTelefono, String tienda, String comentario) {
+        this.motivo = motivo;
+        this.clienteNombre = clienteNombre;
+        this.clienteApellido = clienteApellido;
+        this.clienteCorreo = clienteCorreo;
+        this.clienteTelefono = clienteTelefono;
+        this.tienda = tienda;
+        this.comentario = comentario;
+    }
+    
     public Consulta(Long idConsulta) {
         this.idConsulta = idConsulta;
     }

@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="/Oxxo/css/style.css">
         <link rel="stylesheet" href="/Oxxo/css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <script src="/Oxxo/js/jq/jquery-3.6.1.min.js"></script>
     </head>
     <body>
         <!-- Cabecera -->
@@ -61,7 +60,7 @@
     </br>
     <div>
         <!-- Formulario de solicitud de contacto -->
-        <form class="contactanos" style="max-width: 550px; margin: 0 auto;" method="post" action="SvContacto">
+        <form class="contactanos" style="max-width: 550px; margin: 0 auto;" method="post" action="${pageContext.request.contextPath}/SvContacto">
             <fieldset>
                 <center>
                     <legend>

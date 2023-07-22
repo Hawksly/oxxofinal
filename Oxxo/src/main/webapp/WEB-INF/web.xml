@@ -15,6 +15,14 @@
         <servlet-name>SvValidar</servlet-name>
         <servlet-class>Controlador.servlet.SvValidar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SvContacto</servlet-name>
+        <servlet-class>Controlador.servlet.SvContacto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvRegistro</servlet-name>
+        <servlet-class>Controlador.servlet.SvRegistro</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvProducto</servlet-name>
         <url-pattern>/SvProducto</url-pattern>
@@ -26,6 +34,14 @@
     <servlet-mapping>
         <servlet-name>SvValidar</servlet-name>
         <url-pattern>/SvValidar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvContacto</servlet-name>
+        <url-pattern>/SvContacto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvRegistro</servlet-name>
+        <url-pattern>/SvRegistro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

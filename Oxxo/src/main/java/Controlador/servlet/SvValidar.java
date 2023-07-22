@@ -38,6 +38,8 @@ public class SvValidar extends HttpServlet {
             String password = request.getParameter("password");
             String pass = encript.encriptar(password);
             if (edao.validar(user, pass) == true) {
+                String rol = edao.roles;
+                request.setAttribute("rol", rol);
                 request.getRequestDispatcher("/Vista/inventario.jsp").forward(request, response);
             }else{
             request.getRequestDispatcher("/Vista/login.jsp").forward(request, response);

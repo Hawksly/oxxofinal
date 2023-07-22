@@ -1,7 +1,7 @@
 package Modelo;
 
 public class Rol {
-    private String rol = "Cliente";
+    public String rol = "Cliente";
 
     public Rol() {
     }

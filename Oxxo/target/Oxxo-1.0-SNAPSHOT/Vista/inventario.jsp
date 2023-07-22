@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="/Oxxo/css/ingreso.css">
         <link rel="stylesheet" href="/Oxxo/css/style.css">
         <link rel="stylesheet" href="/Oxxo/css/main.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="icon" href="/Oxxo/res/logo/oxxo-asi-de-facil.png">
     </head>
@@ -25,26 +25,26 @@
                     <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
                     <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
                     <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
-                    <%Rol r = new Rol();
-                    switch (r.getRol()) { 
-                    case "Administrador":%>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
-                        <li><a class="dropdown-item" href="/Oxxo/Vista/registroempleado.jsp">Registro de Empleado</a></li>
-                    </ul>
-                    <%break;
-                    case "Empleado":%>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
-                        <li><a class="nav-link disabled" href="#">Registro de Empleado</a></li>
-                    </ul>
-                    <%break;
-                    case "Cliente":%>
+                    <%String roles="";
+                    if((String) request.getAttribute("rol")!=null){
+                        roles = (String) request.getAttribute("rol");
+                    }else{
+                        roles="";
+                    }
+                    if(roles.equals("Administrador") && roles!=null){
+                    %>
+                    <li><a class="dropdown-item" href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                    <li><a class="dropdown-item" href="/Oxxo/Vista/registroempleado.jsp">Registro</a></li>
+                    <%}
+                    if (roles.equals("Empleado") && roles!=null) {
+                    %>
+                    <li><a class="dropdown-item" href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                    <li><a class="nav-link disabled" href="#">Registro</a></li>
+                    <%} 
+                    if (roles.equals("") && roles!=null){
+                    %>
                     
-                    <%break;
-                    default:%>
-                    
-                    <%break;}%>
+                    <%}%>
                 </ul>
             </nav>
             <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
@@ -56,8 +56,6 @@
                     <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
                     <a href="/Oxxo/Vista/promociones.php">Promociones</a>
                     <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
-                    <a href="/Oxxo/Vista/inventario.jsp">Inventario</a>
-                    <a href="/Oxxo/Vista/registroempleado.jsp">Registro</a>
                 </div>
             </div>
         </header>
@@ -101,6 +99,15 @@
             <div class="contenido">
                 <div class="wow">
                     <div class="footer-col">
+                        <h4>Mundo</h4>
+                        <ul>
+                            <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
+                            <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
+                            <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
+                            <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
                         <h4>¿Necesitas ayuda?</h4>
                         <ul>
                             <li><a href="http://www.femsa.com/es/">FEMSA</a></li>
@@ -124,7 +131,7 @@
     <!-- Fin Inferior -->
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" 

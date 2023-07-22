@@ -13,6 +13,8 @@ public class EmpleadoDAO {
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
+    Rol r = new Rol();
+    public String roles ="";
     public boolean validar(String user, String password) {
     String sql = "SELECT * FROM empleado WHERE usuario=? AND contrasena=?";
     try {
@@ -26,8 +28,8 @@ public class EmpleadoDAO {
             em.setUsuario(rs.getString("usuario"));
             em.setContrasena(rs.getString("contrasena"));
             em.setRol(rs.getString("rol"));
-            Rol r = new Rol();
             r.setRol(rs.getString("rol"));
+            roles = r.getRol();
             String usuarioDB = em.getUsuario();
             if (usuarioDB != null && usuarioDB.equalsIgnoreCase(user)) {
                 System.out.println("Usuario autenticado: " + usuarioDB);
@@ -42,5 +44,15 @@ public class EmpleadoDAO {
         System.out.println("Error en validar(): " + e);
         return false;
     }
+    
 }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+    
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-07-2023 a las 03:07:59
+-- Tiempo de generación: 22-07-2023 a las 18:41:13
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -29,14 +29,22 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `consulta` (
   `id_consulta` bigint(20) UNSIGNED NOT NULL,
-  `motivo` varchar(100) DEFAULT NULL,
-  `cliente_nombre` varchar(100) DEFAULT NULL,
-  `cliente_apellido` varchar(100) DEFAULT NULL,
-  `cliente_correo` varchar(500) DEFAULT NULL,
-  `cliente_telefono` int(11) DEFAULT NULL,
-  `tienda` varchar(500) DEFAULT NULL,
-  `comentario` varchar(1000) DEFAULT NULL
+  `motivo` varchar(100) NOT NULL,
+  `cliente_nombre` varchar(100) NOT NULL,
+  `cliente_apellido` varchar(100) NOT NULL,
+  `cliente_correo` varchar(500) NOT NULL,
+  `cliente_telefono` int(11) NOT NULL,
+  `tienda` varchar(500) NOT NULL,
+  `comentario` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `consulta`
+--
+
+INSERT INTO `consulta` (`id_consulta`, `motivo`, `cliente_nombre`, `cliente_apellido`, `cliente_correo`, `cliente_telefono`, `tienda`, `comentario`) VALUES
+(1, 'Sugerencia', 'Miguel Alonso', 'Guillen Medina', 'miguelguillen24mg@gmail.com', 912350214, 'OXXO - Av. La Mar', 'Buenos productos.'),
+(2, 'Reclamo', 'Maycol', 'Lima Chavez', 'maycol@gmail.com', 912356874, 'OXXO - Av. Bolivar', 'Pocos productos.');
 
 -- --------------------------------------------------------
 
@@ -63,7 +71,9 @@ CREATE TABLE `empleado` (
 --
 
 INSERT INTO `empleado` (`id_usuario`, `dni`, `nombre`, `apellido_paterno`, `apellido_materno`, `telefono`, `correo`, `direccion`, `usuario`, `contrasena`, `rol`) VALUES
-(1, 0, 'Miguel Alonso', 'Guillen', 'Medina', 912350214, 'miguelguillen24mg@gmail.com', 'Calle Libertad 149', 'fc61c9139bb3e2d090ebb9dba20953f3', '34c1c52729f1daae55392c8bb123b795', 'Administrador');
+(1, 71092254, 'Miguel Alonso', 'Guillen', 'Medina', 912350214, 'miguelguillen24mg@gmail.com', 'Calle Libertad 149', 'miguel', '34c1c52729f1daae55392c8bb123b795', 'Administrador'),
+(2, 78154495, 'Maycol', 'Lima', 'Chavez', 912356874, 'maycol@gmail.com', 'Calle Las Brisas 46', 'maycol', '29195ea7beea818448b5db9a9482b003', 'Empleado'),
+(3, 71094458, 'Angelo', 'Uceda', 'Malca', 915684745, 'angelo@gmail.com', 'Calle Angel 22', 'angelo', 'f625ab125cf3828df31058cdcd32c1ef', 'Empleado');
 
 -- --------------------------------------------------------
 
@@ -135,13 +145,13 @@ ALTER TABLE `recursos`
 -- AUTO_INCREMENT de la tabla `consulta`
 --
 ALTER TABLE `consulta`
-  MODIFY `id_consulta` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_consulta` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `empleado`
 --
 ALTER TABLE `empleado`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`

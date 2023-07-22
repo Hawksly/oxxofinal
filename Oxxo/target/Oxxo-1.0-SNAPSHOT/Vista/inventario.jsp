@@ -61,10 +61,10 @@
         </header>
         <!-- Final de Cabecera -->
         <div class="container m-4">
-            <form action="SvProducto" class="col-md-7" method="POST" enctype="multipart/form-data">
+            <form action="${pageContext.request.contextPath}/SvProducto" class="col-md-7" method="POST" enctype="multipart/form-data">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Agregar Imágenes</h3>
+                        <h3>Agregar Productos</h3>
                     </div>
                     <div class="card-body">
                         <div class="form-group">

@@ -273,10 +273,6 @@ function enviarCompra(e) {
 
     const btn = document.getElementById('button');
 
-    // document.getElementById('procesar-pago')
-    //  .addEventListener('submit', function(event) {
-    //    event.preventDefault();
-
         btn.value = 'Enviando...';
 
         const serviceID = 'default_service';

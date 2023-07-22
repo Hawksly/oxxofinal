@@ -17,47 +17,34 @@
     <link rel="icon" href="/src/main/webapp/recursos/res/logo/oxxo-asi-de-facil.png">
 </head>
 <body>
-    <header class="header sticky-top">
-        <div class="logo">
-            <img src="res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
-        </div>
-        <nav>
-            <ul class="nav-links">
-              <li><a href="/src/main/webapp/inicio.html">Inicio</a></li>
-              <li><a href="/src/main/webapp/about.html">Quiénes Somos</a></li>
-              <li><a href="/src/main/webapp/promociones.html">Promociones</a></li>
-              <li><a href="/src/main/webapp/contacto.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-
-        <nav>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal"
-                >
-                  <i class="fas fa-shopping-cart" id="carritoContenedor">0</i>
-                </a>
-              </li>
-            </ul>
-        </nav>
-
-        <a href="login.html" class="boton"><button>Login</button></a>
-
-        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
-        <div class="overlay" id="mobile-menu">
-            <a onclick="closeNav()" href="" class="close">&times;</a>
-            <div class="overlay-content">
-                <a href="inicio.html">Inicio</a>
-                <a href="about.html">Quiénes Somos</a>
-                <a href="promociones.html">Promociones</a>
-                <a href="contacto.html">Contáctanos</a>
+    <!-- Cabecera -->
+        <header class="header sticky-top">
+            <div class="logo">
+                <img src="/Oxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
             </div>
-        </div>
-    </header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
+                    <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
+                    <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
+                    <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
+                    <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                </ul>
+            </nav>
+            <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
+            <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="/Oxxo/Vista/inicio.php">Inicio</a>
+                    <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
+                    <a href="/Oxxo/Vista/promociones.php">Promociones</a>
+                    <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
+                    <a href="/Oxxo/Vista/inventario.jsp"></a>
+                </div>
+            </div>
+        </header>
+        <!-- Final de Cabecera -->
 
 	<div class="photo">
             <center>

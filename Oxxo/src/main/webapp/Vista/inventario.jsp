@@ -13,6 +13,7 @@
         <link rel="icon" href="/Oxxo/res/logo/oxxo-asi-de-facil.png">
     </head>
     <body>
+        <!-- Cabecera -->
         <header class="header sticky-top">
             <div class="logo">
                 <img src="/Oxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
@@ -26,7 +27,7 @@
                     <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
                 </ul>
             </nav>
-            <a href="login.html" class="boton"><button>Login</button></a>
+            <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
             <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
             <div class="overlay" id="mobile-menu">
                 <a onclick="closeNav()" href="" class="close">&times;</a>
@@ -35,9 +36,11 @@
                     <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
                     <a href="/Oxxo/Vista/promociones.php">Promociones</a>
                     <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
+                    <a href="/Oxxo/Vista/inventario.jsp"></a>
                 </div>
             </div>
         </header>
+        <!-- Final de Cabecera -->
         <div class="container m-4">
             <form action="SvProducto" class="col-md-7" method="POST" enctype="multipart/form-data">
                 <div class="card">

@@ -14,31 +14,34 @@
     <link rel="icon" href="/Oxxo/res/logo/oxxo-asi-de-facil.png">
 </head>
 <body>
-    <header class="header sticky-top">
-        <div class="logo">
-            <img src="/Oxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
-                <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
-                <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
-                <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
-                <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
-            </ul>
-        </nav>
-        <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
-        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-        <div class="overlay" id="mobile-menu">
-            <a onclick="closeNav()" href="" class="close">&times;</a>
-            <div class="overlay-content">
-                <a href="/Oxxo/Vista/inicio.php">Inicio</a>
-                <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
-                <a href="/Oxxo/Vista/promociones.php">Promociones</a>
-                <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
+    <!-- Cabecera -->
+        <header class="header sticky-top">
+            <div class="logo">
+                <img src="/Oxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
             </div>
-        </div>
-    </header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
+                    <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
+                    <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
+                    <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
+                    <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
+                </ul>
+            </nav>
+            <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
+            <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="/Oxxo/Vista/inicio.php">Inicio</a>
+                    <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
+                    <a href="/Oxxo/Vista/promociones.php">Promociones</a>
+                    <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
+                    <a href="/Oxxo/Vista/inventario.jsp"></a>
+                </div>
+            </div>
+        </header>
+        <!-- Final de Cabecera -->
     <div id="carouselproducto" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselproducto" data-bs-slide-to="0" class="active"

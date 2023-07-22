@@ -21,7 +21,7 @@
           var data = $(this).attr('data-filter');
           $grid.isotope({
             filter: data
-          })
+          });
         });
 
         var $grid = $(".grid").isotope({
@@ -30,7 +30,7 @@
           masonry: {
             columnWidth: ".all"
           }
-        })
+        });
 
 
 	const Accordion = {

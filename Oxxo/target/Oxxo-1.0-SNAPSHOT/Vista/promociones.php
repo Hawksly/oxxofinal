@@ -30,6 +30,19 @@
                     <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
                 </ul>
             </nav>
+            <nav>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                >
+                  <i class="fas fa-shopping-cart" id="carritoContenedor">0</i>
+                </a>
+              </li>
+            </ul>
+        </nav>
             <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
             <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
             <div class="overlay" id="mobile-menu">
@@ -92,40 +105,32 @@
               </div>
             </div>
           </div>
-    <footer class="footer">
-        <div class="contenido">
-            <div class="wow">
-                <div class="footer-col">
-                    <h4>Mundo</h4>
-                    <ul>
-                        <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="about.html">Quiénes Somos</a></li>
-                        <li><a href="promociones.html">Promociones</a></li>
-                        <li><a href="contacto.html">Contáctanos</a></li>
-                        <li><a href="login.html">Login</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>¿Necesitas ayuda?</h4>
-                    <ul>
-                        <li><a href="http://www.femsa.com/es/">FEMSA</a></li>
-                        <li><a href="https://www.oxxo.pe/faqs">Preguntas frecuentes</a></li>
-                        <li><a href="https://www.oxxo.pe/aviso-de-privacidad">Política de privacidad</a></li>
-                        <li><a href="https://www.oxxo.pe/terminos-y-condiciones">Términos y condiciones</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>¡Síguenos en nuestras redes sociales!</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/OXXOperu/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/OXXOperu/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/Tiendas_OXXO"><i class="fab fa-twitter"></i></a>
-                        <img src="res/logo/oxxo-asi-de-facil.png" alt="oxxo-asi-de-facil" />
+    <!-- Inferior -->
+        <footer class="footer">
+            <div class="contenido">
+                <div class="wow">
+                    <div class="footer-col">
+                        <h4>¿Necesitas ayuda?</h4>
+                        <ul>
+                            <li><a href="http://www.femsa.com/es/">FEMSA</a></li>
+                            <li><a href="https://www.oxxo.pe/faqs">Preguntas frecuentes</a></li>
+                            <li><a href="https://www.oxxo.pe/aviso-de-privacidad">Política de privacidad</a></li>
+                            <li><a href="https://www.oxxo.pe/terminos-y-condiciones">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>¡Síguenos en nuestras redes sociales!</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/OXXOperu/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/OXXOperu/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/Tiendas_OXXO"><i class="fab fa-twitter"></i></a>
+                            <img src="/Oxxo/res/logo/oxxo-asi-de-facil.png" alt="oxxo-asi-de-facil" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    <!-- Fin Inferior -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>

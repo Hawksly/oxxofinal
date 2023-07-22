@@ -61,6 +61,32 @@
 			</div>
 		</div>
 	</main> 
+    <!-- Inferior -->
+        <footer class="footer">
+            <div class="contenido">
+                <div class="wow">
+                    <div class="footer-col">
+                        <h4>¿Necesitas ayuda?</h4>
+                        <ul>
+                            <li><a href="http://www.femsa.com/es/">FEMSA</a></li>
+                            <li><a href="https://www.oxxo.pe/faqs">Preguntas frecuentes</a></li>
+                            <li><a href="https://www.oxxo.pe/aviso-de-privacidad">Política de privacidad</a></li>
+                            <li><a href="https://www.oxxo.pe/terminos-y-condiciones">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>¡Síguenos en nuestras redes sociales!</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/OXXOperu/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/OXXOperu/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/Tiendas_OXXO"><i class="fab fa-twitter"></i></a>
+                            <img src="/Oxxo/res/logo/oxxo-asi-de-facil.png" alt="oxxo-asi-de-facil" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Fin Inferior -->
         <!-- js bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

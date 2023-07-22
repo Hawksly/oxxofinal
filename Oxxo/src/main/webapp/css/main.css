@@ -197,7 +197,6 @@ ol {
   }
 }
 
-/* One Click Scrool Top Button*/
 .scroll-top {
   width: 45px;
   height: 45px;
@@ -232,8 +231,6 @@ ol {
   background-color: #081828;
 }
 
-
-/* Pagination CSS */
 .pagination {
   text-align: left;
   margin: 40px 0 0 0;
@@ -387,7 +384,6 @@ ol {
   text-align: center;
 }
 
-/* Preloader */
 .preloader {
   position: fixed;
   top: 0;
@@ -454,13 +450,9 @@ ol {
   }
 }
 
-/*======================================
-    Hero Area CSS
-========================================*/
 .hero-area {
   position: relative;
   padding: 220px 0 250px 0;
-  background-image: url("../images/web/bgceviche.PNG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -586,9 +578,6 @@ ol {
   }
 }
 
-/*======================================
-    Small Features CSS
-========================================*/
 .small-features .inner-content {
   display: inline-block;
   display: inline-block;

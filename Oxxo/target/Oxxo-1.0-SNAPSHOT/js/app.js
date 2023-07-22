@@ -163,7 +163,7 @@ stockProductos.forEach((prod) => {
 });
 
 const agregarProducto = (id) => {
-  const existe = carrito.some(prod => prod.id === id)
+  const existe = carrito.some(prod => prod.id === id);
 
   if (existe) {
     const prod = carrito.map(prod => {

@@ -211,18 +211,10 @@
 			</div>
 		</div>
     </SECTION>
+    <!-- Inferior -->
         <footer class="footer">
             <div class="contenido">
                 <div class="wow">
-                    <div class="footer-col">
-                        <h4>Mundo</h4>
-                        <ul>
-                            <li><a href="/Oxxo/Vista/inicio.php">Inicio</a></li>
-                            <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
-                            <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
-                            <li><a href="/Oxxo/Vista/contacto.php">Contáctanos</a></li>
-                        </ul>
-                    </div>
                     <div class="footer-col">
                         <h4>¿Necesitas ayuda?</h4>
                         <ul>
@@ -244,9 +236,10 @@
                 </div>
             </div>
         </footer>
+    <!-- Fin Inferior -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>
-            <script src="/Oxxo/recursos/js/main.js"></script>
+        <script src="/Oxxo/recursos/js/main.js"></script>
 </body>
 </html>

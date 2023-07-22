@@ -35,7 +35,7 @@ public class SvValidar extends HttpServlet {
             String pass = request.getParameter("password");
             em = edao.validar(user, pass);
             if (em.getUsuario()!=null) {
-                request.getRequestDispatcher("SvControlador?accion=Inicio").forward(request, response);
+                request.getRequestDispatcher("/Vista/inventario.jsp").forward(request, response);
             } else {
                 request.getRequestDispatcher("/Vista/login.jsp").forward(request, response);
             }

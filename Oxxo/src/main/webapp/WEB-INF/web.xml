@@ -12,10 +12,6 @@
         <servlet-class>Controlador.servlet.SvConsulta</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SvControlador</servlet-name>
-        <servlet-class>Controlador.servlet.SvControlador</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>SvValidar</servlet-name>
         <servlet-class>Controlador.servlet.SvValidar</servlet-class>
     </servlet>
@@ -26,10 +22,6 @@
     <servlet-mapping>
         <servlet-name>SvConsulta</servlet-name>
         <url-pattern>/SvConsulta</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SvControlador</servlet-name>
-        <url-pattern>/SvControlador</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SvValidar</servlet-name>

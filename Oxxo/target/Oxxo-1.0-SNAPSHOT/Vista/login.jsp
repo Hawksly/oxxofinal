@@ -45,7 +45,7 @@
 		</div>
 		<div class="card" style="width: 40vw;">
 			<div class="card-body">
-				<form class="pb-4" action="SvValidar" method="post" >
+				<form class="pb-4" action="${pageContext.request.contextPath}/SvValidar" method="post" >
 					<h3 class="text-center">Iniciar sesión</h3>
 					<label for="username">Nombre de usuario</label>
 					<input type="text" class="form-control" id="username" name="username" placeholder="Usuario" required autofocus /><br>

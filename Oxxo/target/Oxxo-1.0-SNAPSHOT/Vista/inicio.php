@@ -27,7 +27,7 @@
                 <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
             </ul>
         </nav>
-        <a href="login.jsp" class="boton"><button>Login</button></a>
+        <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
         <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
         <div class="overlay" id="mobile-menu">
             <a onclick="closeNav()" href="" class="close">&times;</a>

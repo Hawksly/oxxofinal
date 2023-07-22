@@ -24,7 +24,6 @@
                     <li><a href="/Oxxo/Vista/about.php">Quiénes Somos</a></li>
                     <li><a href="/Oxxo/Vista/promociones.php">Promociones</a></li>
                     <li><a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a></li>
-                    <li><a href="/Oxxo/Vista/inventario.jsp">Inventario</a></li>
                 </ul>
             </nav>
             <a href="/Oxxo/Vista/login.jsp" class="boton"><button>Login</button></a>
@@ -36,7 +35,6 @@
                     <a href="/Oxxo/Vista/about.php">Quiénes Somos</a>
                     <a href="/Oxxo/Vista/promociones.php">Promociones</a>
                     <a href="/Oxxo/Vista/contacto.jsp">Contáctanos</a>
-                    <a href="/Oxxo/Vista/inventario.jsp"></a>
                 </div>
             </div>
         </header>

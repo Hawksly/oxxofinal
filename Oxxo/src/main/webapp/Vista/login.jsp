@@ -45,7 +45,7 @@
 		</div>
 		<div class="card" style="width: 40vw;">
 			<div class="card-body">
-				<form method="post" class="pb-4" action="SvLogin">
+				<form class="pb-4" action="SvValidar" method="post" >
 					<h3 class="text-center">Iniciar sesión</h3>
 					<label for="username">Nombre de usuario</label>
 					<input type="text" class="form-control" id="username" name="username" placeholder="Usuario" required autofocus /><br>
@@ -53,7 +53,7 @@
 					<input type="password" class="form-control" id="password" name="password" placeholder="Password" required /><br>
 					<input type="hidden" name="action" value="login" />
 					<div class="p-4 d-flex flex-ro1 justify-content-around">
-						<input type="submit" value="Login" class="btn btn-primary" />
+						<input type="submit" name="accion" value="Ingresar" class="btn btn-primary" />
 					</div>
 				</form>
 			</div>

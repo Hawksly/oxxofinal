@@ -1,7 +1,7 @@
 package Controlador.jpa;
 
-import Controlador.entity.Consulta;
-import Controlador.exceptions.NonexistentEntityException;
+import Controlador.CRUD.exceptions.NonexistentEntityException;
+import Modelo.entidades.Consulta;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -21,9 +21,6 @@ public class ConsultaJpaController implements Serializable {
 
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
-    }
-
-    public ConsultaJpaController() {
     }
 
     public void create(Consulta consulta) {

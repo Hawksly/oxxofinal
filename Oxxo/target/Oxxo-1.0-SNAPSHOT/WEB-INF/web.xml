@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
     <welcome-file-list>
-        <welcome-file>/Vista/login.jsp</welcome-file>
+        <welcome-file>/Vista/inicio.php</welcome-file>
     </welcome-file-list>
-    <servlet>
-        <servlet-name>SvLogin</servlet-name>
-        <servlet-class>Controlador.servlet.SvLogin</servlet-class>
-    </servlet>
     <servlet>
         <servlet-name>SvProducto</servlet-name>
         <servlet-class>Controlador.servlet.SvProducto</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>SvLogin</servlet-name>
-        <url-pattern>/SvLogin</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>SvConsulta</servlet-name>
+        <servlet-class>Controlador.servlet.SvConsulta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvControlador</servlet-name>
+        <servlet-class>Controlador.servlet.SvControlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvValidar</servlet-name>
+        <servlet-class>Controlador.servlet.SvValidar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvProducto</servlet-name>
         <url-pattern>/SvProducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvConsulta</servlet-name>
+        <url-pattern>/SvConsulta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvControlador</servlet-name>
+        <url-pattern>/SvControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvValidar</servlet-name>
+        <url-pattern>/SvValidar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

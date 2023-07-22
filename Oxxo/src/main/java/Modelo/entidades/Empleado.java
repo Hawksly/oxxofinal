@@ -94,6 +94,12 @@ public class Empleado implements Serializable {
         this.idUsuario = idUsuario;
     }
 
+    public Empleado(String usuario, String contrasena, String rol) {
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+        this.rol = rol;
+    }
+
     public Empleado(Integer idUsuario, int dni, String nombre, String apellidoPaterno, String apellidoMaterno, int telefono, String correo, String direccion, String usuario, String contrasena, String rol) {
         this.idUsuario = idUsuario;
         this.dni = dni;

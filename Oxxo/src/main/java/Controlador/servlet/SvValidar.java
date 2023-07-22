@@ -1,10 +1,11 @@
 package Controlador.servlet;
 
 import Controlador.dao.EmpleadoDAO;
+import Modelo.encriptacion.Encriptacion;
 import Modelo.entidades.Empleado;
-import jakarta.servlet.annotation.WebServlet;
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +15,7 @@ public class SvValidar extends HttpServlet {
 
     EmpleadoDAO edao = new EmpleadoDAO();
     Empleado em = new Empleado();
+    Encriptacion encript = new Encriptacion();
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -29,19 +31,22 @@ public class SvValidar extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String accion = request.getParameter("accion");
-        if(accion.equalsIgnoreCase("Ingresar")){
+        try {
+            String accion = request.getParameter("accion");
+            if(accion.equalsIgnoreCase("Ingresar")){
             String user = request.getParameter("username");
-            String pass = request.getParameter("password");
-            em = edao.validar(user, pass);
-            if (em.getUsuario()!=null) {
+            String password = request.getParameter("password");
+            String pass = encript.encriptar(password);
+            if (edao.validar(user, pass) == true) {
                 request.getRequestDispatcher("/Vista/inventario.jsp").forward(request, response);
-            } else {
-                request.getRequestDispatcher("/Vista/login.jsp").forward(request, response);
-            }
-        }else{
+            }else{
             request.getRequestDispatcher("/Vista/login.jsp").forward(request, response);
+            }
+            }
+        } catch (IOException | ServletException e) {
+            System.out.println("Error en SvValidar: "+e);
         }
+        
     }
 
     @Override

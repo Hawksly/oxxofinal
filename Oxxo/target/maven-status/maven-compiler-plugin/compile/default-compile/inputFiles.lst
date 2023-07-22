@@ -1,15 +1,16 @@
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\CRUD\CRUD.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\CRUD\exceptions\IllegalOrphanException.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\jpa\exceptions\NonexistentEntityException.java
-C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\servlet\SvControlador.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Modelo\DataBase\Conexion.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\jpa\ConsultaJpaController.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\com\mycompany\oxxo\JakartaRestConfiguration.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\exceptions\NonexistentEntityException.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\exceptions\PreexistingEntityException.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\com\mycompany\oxxo\resources\JakartaEE8Resource.java
+C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Modelo\encriptacion\Encriptacion.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\CRUD\exceptions\PreexistingEntityException.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Modelo\entidades\Empleado.java
+C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\dao\ConsultaDAO.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\exceptions\IllegalOrphanException.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\CRUD\exceptions\NonexistentEntityException.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\servlet\SvConsulta.java
@@ -17,4 +18,5 @@ C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\dao\EmpleadoDAO.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\servlet\SvValidar.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\jpa\exceptions\PreexistingEntityException.java
+C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\jpa\EmpleadoJpaController.java
 C:\xampp\htdocs\Proyectos\Desarrollo_Web_Integrado\oxxofinal\Oxxo\src\main\java\Controlador\jpa\exceptions\IllegalOrphanException.java

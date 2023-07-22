@@ -1,5 +1,6 @@
 package Controlador.dao;
 
+import Controlador.jpa.EmpleadoJpaController;
 import Modelo.entidades.Empleado;
 import Modelo.DataBase.Conexion;
 import java.sql.Connection;
@@ -12,31 +13,32 @@ public class EmpleadoDAO {
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    public Empleado validar(String user, String password){
-        Empleado em = new Empleado();
-        String sql="SELECT * FROM empleado WHERE usuario=? and contrasena=?";
-        try {
-            con=cn.conexion();
-            ps=con.prepareStatement(sql);
-            ps.setString(1, user);
-            ps.setString(2, password);
-            rs=ps.executeQuery();
-            while (rs.next()) {
-                em.setIdUsuario(rs.getInt("IdEmpleado"));
-                em.setDni(Integer.parseInt("Dni"));
-                em.setApellidoPaterno("ApellidoPaterno");
-                em.setApellidoMaterno("ApellidoMaterno");
-                em.setTelefono(Integer.parseInt("Telefono"));
-                em.setCorreo("Correo");
-                em.setDireccion("Direccion");
-                em.setUsuario(rs.getString("User"));
-                em.setContrasena("Pass");
-                em.setRol("Rol");
-                
+    public boolean validar(String user, String password) {
+    String sql = "SELECT * FROM empleado WHERE usuario=? AND contrasena=?";
+    try {
+        con = cn.conexion();
+        ps = con.prepareStatement(sql);
+        ps.setString(1, user);
+        ps.setString(2, password);
+        rs = ps.executeQuery();
+        if (rs.next()) {
+            Empleado em = new Empleado();
+            em.setUsuario(rs.getString("usuario"));
+            em.setContrasena(rs.getString("contrasena"));
+            em.setRol(rs.getString("rol"));
+            String usuarioDB = em.getUsuario();
+            if (usuarioDB != null && usuarioDB.equalsIgnoreCase(user)) {
+                System.out.println("Usuario autenticado: " + usuarioDB);
+                return true;
+            } else {
+                return false;
             }
-        } catch (SQLException e) {
+        } else {
+            return false;
         }
-        return em;
+    } catch (SQLException e) {
+        System.out.println("Error en validar(): " + e);
+        return false;
     }
-    
+}
 }
